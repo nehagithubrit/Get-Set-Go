@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <h2>Register Form</h2>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylu.css">
+<title>Dropdown menu</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+ .center{
+   text-align: "Register";
+ }
+  .menu_bar {
+    /* Your menu bar styles here */
+  }
+
+  .login-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #464c50;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-container h2 {
+    margin-bottom: 20px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="menu_bar">
+    <h1><span style="font-size: 25px; font-weight: 100; color: #d0f440;">Get-->Set-->&nbsp<img src="logo.png" height="60" width="60"></span></h1>
+    <ul>
+      <li><a href="homme.html">Home</a></li>
+      <li><a href="aboutUs.html">Aboutus</a></li>
+      <li><a href="contactus.html">ContactUs</a></li>
+      <li><a href="#">Places<i class="fas-fa-caret-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#">K R PURA</a></li>
+          <li><a href="#">R K PURA</a></li>
+          <li><a href="#">HAL</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <img src="mara.png" height="600" width="600">
+  <div class="login-container">
+   
+    <h1>LOGIN</h1>
+    <form action="login.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="login">
+        <a href="login.html"></a>
+    </form>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer style="background: #d0f440;padding: 15px 0;text-align: center;font-family: 'Poppins', sans-serif;">
+    <div class="text">
+      <span style="font-size: 17px;font-weight: 400;color: #e41212;">Sponsored By <a href="#" style="font-weight: 500;color: #d31919;">Sports Authority Of India</a> | &#169; 2023 All Rights Reserved</span>
+    </div>
+  </footer>
+</body>
+</html>
